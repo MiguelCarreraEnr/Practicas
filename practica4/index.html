@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Práctica 3 | Ibero Puebla</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body class="d-flex flex-column h-100">
+        <main class="flex-shrink-0">
+            <!-- Navigation-->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+                <div class="container px-5">
+                    <a class="navbar-brand">Menu</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item"><a class="nav-link" href="../">Home</a></li>                    
+                            <li class="nav-item"><a class="nav-link" href="../index.html#resumen">Acerca de mi</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../index.html#practicas">Prácticas</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Seccion TITULO de Portafolio-->
+            <header class="bg-primary py-2 mt-6">
+                <div class="container px-5">
+                    <div class="row gx-5 align-items-center justify-content-center">
+                        <div class="col-lg-8 col-xl-7 col-xxl-6">
+                            <div class="my-5 text-center text-xl-start">
+                                <h1 class="display-6 fw-bolder text-white mb-2">Portafolio de Actividades</h1>
+                                <h1 class="display-8 fw-bolder text-white mb-2">Laboratorio de Elementos Programables</h1>
+                                <p id="resumen" class="display-8 fw-normal text-white-50 mb-4">Departamento de Ciencias e Ingenierías | Universidad Iberoamericana Puebla, México.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Seccion TITULO de la Práctica-->
+            <section class="py-3" id="scroll-target">
+                <div class="container px-5 my-2">
+                    <!-- Post header-->
+                    <header class="mb-4">
+                        <!-- Post title-->
+                        <h1 class="fw-bolder mb-1">Curso Attiny85 Básico</h1>
+
+                        <!-- ETIQUETA DE ALUMNO (Hacer una por cada alumno)-->
+                            <img class="img-fluid rounded-circle" width="50px" src="assets/Huber.jpg" alt="..." />
+                            <div class="ms-2">
+                                <div class="fw-bold">Miguel Angel Carrera Enriquez</div>
+                                <div class="text-muted">Ingeniería en Sistemas Computacionales</div>
+                            </div>
+                        <!--Aqui termina etiqueta de alumno-->
+
+                        <div class="text-muted fst-italic mt-2 mb-2">Fecha: 13-Septiembre-2023</div>
+                        <!-- ETIQUETAS O TOPICOS IMPORTANTES DE LA PRACTICA-->
+                        <a class="badge bg-primary text-decoration-none link-light" >Arduino</a>
+                        <a class="badge bg-primary text-decoration-none link-light" >Electrónica</a>
+
+                    </header>
+                </div>
+            </section>
+
+            <!-- Seccion de CONTENIDO de la Práctica-->
+            <section>
+                <div class="container px-5">
+
+                    <figure class="mb-4"><img class="img-fluid rounded" width="400px" src="img/attiny.jpeg" alt="..." /></figure>
+                                
+                    <p id="resumen">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Resumen -</h2>
+                        <p class="fs-6 mb-4">Dentro de la práctica de Attiny85 Outputs se realizaron varios ejercicios sobre  salidas digitales, analógicas e inteligentes con Attiny85.</p>
+                        
+                        
+                        <p id="intro">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Introducción -</h2>
+                        <p class="fs-6 mb-4"> Los microcontroladores ATtiny85 son componentes electrónicos que se destacan por su tamaño compacto y su capacidad para realizar tareas de control digital de manera eficiente. En esta práctica, exploramos los fundamentos de la programación de entradas y salidas digitales utilizando el ATtiny85. Aprendimos cómo configurar y controlar pines digitales, específicamente a través de LEDs y botones pulsadores..</p>
+                      
+                        
+                        <p id="materiales">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Materiales -</h2>
+                        <p class="fs-6 mb-4">-Arduino UNO</p>
+                        <p class="fs-6 mb-4">-Leds</p>
+                        <p class="fs-6 mb-4">-Resistencias 220Ω y 10kΩ</p>
+                        <p class="fs-6 mb-4">-Attiny85</p>
+                        <p class="fs-6 mb-4">-Protoboard</p>
+                        <p class="fs-6 mb-4">-Cables macho-macho</p>
+                        <p class="fs-6 mb-4">-Push botton</p>
+                        <p class="fs-6 mb-4">-Buzzer pasivo</p>
+                        <p class="fs-6 mb-4">-Motor DC</p>
+                        <p class="fs-6 mb-4">-Neopixel</p>
+                        <p class="fs-6 mb-4">-Servomotores</p>
+                    
+                        <p id="desarrollo">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Desarrollo -</h2>
+                        <p class="fs-6 mb-4">En la práctica uno se conectó el Attiny con los puertos hacia el Arduino Uno, conectando un led junto con dos botones. En la En la práctica dos no se cambió nada del armado solo se programó para que parpadeará al presionar el botón .En la tercer práctica se cambió el led por un buzzer. En la cuarta práctica se cambió el buzzer por un led RGB. En la quinta práctica se programó para que cada que pulsaras el botón, se cambiara el color del led RGB. En la sexta práctica agregó un transistor junto con un motor dc apoyado de una fuente de poder, manteniendo los dos botones. En la septima práctica se cambió el motor por un led .En la octava se programó para bajar la intensidad del led y subir la intensidad por los dos botones. En la novena práctica se cambió el led por un buzzer. En la décima práctica se programó para subir/bajar el sonido con los botones. En la onceava práctica se cambió el buzzer por un Motor DC. En la doceava se cambió el motor dc por un servomotor. En la treceava práctica se programó para subir/bajar la velocidad del servomotor con los dos botones. En la catorceava se cambió el servomotor por un neopixel. En las otras prácticas se ocupó igual neopixeles</p>
+                       
+                        <section id="simulaci
+                            <h2 class="fw-bolder mb-4 mt-5 fs-5">- Simulación -</h2>
+                            
+                            <div class="row">
+                                <div class="col-md-6 mb-4" align="center">
+                                    <figure>
+                                        <video width="100%" controls>
+                                            <source src="video/1.mov" type="video/mp4">
+                                        </video>
+                                    </figure>
+                                </div>
+                                <div class="col-md-6 mb-4" align="center">
+                                    <figure>
+                                        <video width="100%" controls>
+                                            <source src="video/2.mov" type="video/mp4">
+                                        </video>
+                                    </figure>
+                                </div>
+                                <div class="col-md-6 mb-4" align="center">
+                                    <figure>
+                                        <video width="100%" controls>
+                                            <source src="video/3.mov" type="video/mp4">
+                                        </video>
+                                    </figure>
+                                </div>
+                                <div class="col-md-6 mb-4" align="center">
+                                    <figure>
+                                        <video width="100%" controls>
+                                            <source src="video/5.mov" type="video/mp4">
+                                        </video>
+                                    </figure>
+                                </div>
+                                <div class="col-md-6 mb-4" align="center">
+                                    <figure>
+                                        <video width="100%" controls>
+                                            <source src="video/6.mov" type="video/mp4">
+                                        </video>
+                                    </figure>
+                                </div>
+                                <div class="col-md-6 mb-4" align="center">
+                                    <figure>
+                                        <video width="100%" controls>
+                                            <source src="video/7.mov" type="video/mp4">
+                                        </video>
+                                    </figure>
+                                </div>
+                                <div class="col-md-6 mb-4" align="center">
+                                    <figure>
+                                        <video width="100%" controls>
+                                            <source src="video/8.mov" type="video/mp4">
+                                        </video>
+                                    </figure>
+                                </div>
+                                <div class="col-md-6 mb-4" align="center">
+                                    <figure>
+                                        <video width="100%" controls>
+                                            <source src="video/9.mov" type="video/mp4">
+                                        </video>
+                                    </figure>
+                                </div>
+                                <div class="col-md-6 mb-4" align="center">
+                                    <figure>
+                                        <video width="100%" controls>
+                                            <source src="video/10.mov" type="video/mp4">
+                                        </video>
+                                    </figure>
+                                </div>
+                                <div class="col-md-6 mb-4" align="center">
+                                    <figure>
+                                        <video width="100%" controls>
+                                            <source src="video/11.mov" type="video/mp4">
+                                        </video>
+                                    </figure>
+                                </div>
+                                <div class="col-md-6 mb-4" align="center">
+                                    <figure>
+                                        <video width="100%" controls>
+                                            <source src="video/12.mov" type="video/mp4">
+                                        </video>
+                                    </figure>
+                                </div>
+                                <div class="col-md-6 mb-4" align="center">
+                                    <figure>
+                                        <video width="100%" controls>
+                                            <source src="video/13.mov" type="video/mp4">
+                                        </video>
+                                    </figure>
+                                </div>
+                        
+                                <div class="col-md-6 mb-4" align="center">
+                                    <figure>
+                                        <video width="100%" controls>
+                                            <source src="video/14.mov" type="video/mp4">
+                                        </video>
+                                    </figure>
+                                </div>
+                                <div class="col-md-6 mb-4" align="center">
+                                    <figure>
+                                        <video width="100%" controls>
+                                            <source src="video/15.mov" type="video/mp4">
+                                        </video>
+                                    </figure>
+                                </div>
+                                <div class="col-md-6 mb-4" align="center">
+                                    <figure>
+                                        <video width="100%" controls>
+                                            <source src="video/16.mov" type="video/mp4">
+                                        </video>
+                                    </figure>
+                                </div>
+                                <div class="col-md-6 mb-4" align="center">
+                                    <figure>
+                                        <video width="100%" controls>
+                                            <source src="video/17.mov" type="video/mp4">
+                                        </video>
+                                    </figure>
+                                </div>
+
+                            </div>
+                        </section>
+                        
+                        <section id="resultados">
+                            <h1 class="fw-bolder2 mb-4 mt-5 fs-5">- Resultados -</h1>
+                            <div class="row">
+                                <div class="col-md-6 mb-4" align="center">
+                                    <h1 class="mb-4 mt-5 fs-5" >- 1 -</h1>
+                                    <figure>
+                                        <video width="70%" controls>
+                                            <source src="video/1R.mov" type="video/mp4">
+                                        </video>
+                                    </figure>
+                                </div>
+                                <div class="col-md-6 mb-4" align="center">
+                                    <h1 class="mb-4 mt-5 fs-5" >- 2 -</h1>
+                                    <figure>
+                                        <video width="70%" controls>
+                                            <source src="video/2R.mov" type="video/mp4">
+                                        </video>
+                                    </figure>
+                                </div>
+                                <div class="col-md-6 mb-4" align="center">
+                                    <h1 class="mb-4 mt-5 fs-5" >- 3 -</h1>
+                                    <figure>
+                                        <video width="70%" controls>
+                                            <source src="video/3R.mov" type="video/mp4">
+                                        </video>
+                                    </figure>
+                                </div>
+                                <div class="col-md-6 mb-4" align="center">
+                                    <h1 class="mb-4 mt-5 fs-5" >- 4 -</h1>
+                                    <figure>
+                                        <video width="70%" controls>
+                                            <source src="video/4R.mov" type="video/mp4">
+                                        </video>
+                                    </figure>
+                                </div>
+                                <div class="col-md-6 mb-4" align="center">
+                                    <h1 class="mb-4 mt-5 fs-5" >- 5 -</h1>
+                                    <figure>
+                                        <video width="70%" controls>
+                                            <source src="video/5R.mov" type="video/mp4">
+                                        </video>
+                                    </figure>
+                                </div>
+                                <div class="col-md-6 mb-4" align="center">
+                                    <h1 class="mb-4 mt-5 fs-5" >- 6 </h1>
+                                    <figure>
+                                        <video width="50%" controls>
+                                            <source src="video/6R.mov" type="video/mp4">
+                                        </video>
+                                    </figure>
+                                </div>
+                                <div class="col-md-6 mb-4" align="center">
+                                    <h1 class="mb-4 mt-5 fs-5" >- 7 -</h1>
+                                    <figure>
+                                        <video width="50%" controls>
+                                            <source src="video/7R.mov" type="video/mp4">
+                                        </video>
+                                    </figure>
+                                </div>
+                                <div class="col-md-6 mb-4" align="center">
+                                    <h1 class="mb-4 mt-5 fs-5" >- 8 -</h1>
+                                    <figure>
+                                        <video width="50%" controls>
+                                            <source src="video/8R.mov" type="video/mp4">
+                                        </video>
+                                    </figure>
+                                </div>
+                                <div class="col-md-6 mb-4" align="center">
+                                    <h1 class="mb-4 mt-5 fs-5" >- 9 -</h1>
+                                    <figure>
+                                        <video width="50%" controls>
+                                            <source src="video/9R.mov" type="video/mp4">
+                                        </video>
+                                    </figure>
+                                </div>
+                                <div class="col-md-6 mb-4" align="center">
+                                    <h1 class="mb-4 mt-5 fs-5" >- 10 -</h1>
+                                    <figure>
+                                        <video width="50%" controls>
+                                            <source src="video/10R.mov" type="video/mp4">
+                                        </video>
+                                    </figure>
+                                </div>
+                                <div class="col-md-6 mb-4" align="center">
+                                    <h1 class="mb-4 mt-5 fs-5" >- 11 -</h1>
+                                    <figure>
+                                        <video width="50%" controls>
+                                            <source src="video/11R.mov" type="video/mp4">
+                                        </video>
+                                    </figure>
+                                </div>
+                                <div class="col-md-6 mb-4" align="center">
+                                    <h1 class="mb-4 mt-5 fs-5" >- 12 -</h1>
+                                    <figure>
+                                        <video width="50%" controls>
+                                            <source src="video/12R.mov" type="video/mp4">
+                                        </video>
+                                    </figure>
+                                </div>
+                                <div class="col-md-6 mb-4" align="center">
+                                    <h1 class="mb-4 mt-5 fs-5" >- 13 -</h1>
+                                    <figure>
+                                        <video width="50%" controls>
+                                            <source src="video/13R.mov" type="video/mp4">
+                                        </video>
+                                    </figure>
+                                </div>
+                                <div class="col-md-6 mb-4" align="center">
+                                    <h1 class="mb-4 mt-5 fs-5" >- 14 -</h1>
+                                    <figure>
+                                        <video width="50%" controls>
+                                            <source src="video/14R.mov" type="video/mp4">
+                                        </video>
+                                    </figure>
+                                </div>
+                                <div class="col-md-6 mb-4" align="center">
+                                    <h1 class="mb-4 mt-5 fs-5" >- 15 -</h1>
+                                    <figure>
+                                        <video width="50%" controls>
+                                            <source src="video/15R.mov" type="video/mp4">
+                                        </video>
+                                    </figure>
+                                </div>
+                                <div class="col-md-6 mb-4" align="center">
+                                    <h1 class="mb-4 mt-5 fs-5" >- 16 -</h1>
+                                    <figure>
+                                        <video width="50%" controls>
+                                            <source src="video/16R.mov" type="video/mp4">
+                                        </video>
+                                    </figure>
+                                </div>
+                                <div class="col-md-6 mb-4" align="center">
+                                    <h1 class="mb-4 mt-5 fs-5" >- 17 -</h1>
+                                    <figure>
+                                        <video width="50%" controls>
+                                            <source src="video/17R.mov" type="video/mp4">
+                                        </video>
+                                    </figure>
+                                </div>
+
+                            </div>
+                        </section>
+
+                        <p id="conclusiones">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Conclusiones -</h2>
+                        <p class="fs-6 mb-4">Como coclusión de la práctica me parecio interesante por la diferente manera de utilizar el Arduino Uno, al final el Attiny es un microcontrolador que tiene sus pines que ocupamos tanto como entradas y salidas.</p>
+                       
+                        <p id="referencias">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Referencias -</h2>
+                        <p class="fs-6 mb-4">https://www.tinkercad.com/classrooms/kKxYmpPDJXs/activities/4kQsn4JC4gt</p>
+                </div>
+            </section>
+
+            
+        </main>
+
+        <!-- Footer-->
+        <footer class="bg-dark py-4 mt-auto">
+            <div class="container px-5">
+                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                    <div class="col-auto"><div class="small m-0 text-white">Copyright &copy; Ingenierias-iberopuebla.mx 2023</div></div>
+                    <div class="col-auto">
+                        <a class="link-light small" href="#!">Privacy</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="#!">Terms</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="#!">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

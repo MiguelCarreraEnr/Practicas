@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Práctica 5 | Ibero Puebla</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body class="d-flex flex-column h-100">
+        <main class="flex-shrink-0">
+            <!-- Navigation-->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+                <div class="container px-5">
+                    <a class="navbar-brand">Menu</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item"><a class="nav-link" href="../">Home</a></li>                    
+                            <li class="nav-item"><a class="nav-link" href="../index.html#resumen">Acerca de mi</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../index.html#practicas">Prácticas</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Seccion TITULO de Portafolio-->
+            <header class="bg-primary py-2 mt-6">
+                <div class="container px-5">
+                    <div class="row gx-5 align-items-center justify-content-center">
+                        <div class="col-lg-8 col-xl-7 col-xxl-6">
+                            <div class="my-5 text-center text-xl-start">
+                                <h1 class="display-6 fw-bolder text-white mb-2">Portafolio de Actividades</h1>
+                                <h1 class="display-8 fw-bolder text-white mb-2">Laboratorio de Elementos Programables</h1>
+                                <p id="resumen" class="display-8 fw-normal text-white-50 mb-4">Departamento de Ciencias e Ingenierías | Universidad Iberoamericana Puebla, México.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Seccion TITULO de la Práctica-->
+            <section class="py-3" id="scroll-target">
+                <div class="container px-5 my-2">
+                    <!-- Post header-->
+                    <header class="mb-4">
+                        <!-- Post title-->
+                        <h1 class="fw-bolder mb-1">Pantalla OLED</h1>
+
+                        <!-- ETIQUETA DE ALUMNO (Hacer una por cada alumno)-->
+                            <img class="img-fluid rounded-circle" width="50px" src="assets/Huber.jpg" alt="..." />
+                            <div class="ms-2">
+                                <div class="fw-bold">Miguel Angel Carrera Enriquez</div>
+                                <div class="text-muted">Ingeniería en Sistemas Computacionales</div>
+                            </div>
+                        <!--Aqui termina etiqueta de alumno-->
+
+                        <div class="text-muted fst-italic mt-2 mb-2">Fecha: 27-Septiembre-2023</div>
+                        <!-- ETIQUETAS O TOPICOS IMPORTANTES DE LA PRACTICA-->
+                        <a class="badge bg-primary text-decoration-none link-light" >Arduino</a>
+                        <a class="badge bg-primary text-decoration-none link-light" >Electrónica</a>
+
+                    </header>
+                </div>
+            </section>
+
+            <!-- Seccion de CONTENIDO de la Práctica-->
+            <section>
+                <div class="container px-5">
+
+                    <figure class="mb-4"><img class="img-fluid rounded" width="400px" src="img/oled.jpg" alt="..." /></figure>
+                                
+                    <p id="resumen">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Resumen -</h2>
+                        <p class="fs-6 mb-4">En resumen, la actividad implica la conexión de una pantalla OLED que utiliza el protocolo de comunicación I2C. Este protocolo posibilita la conexión de varios dispositivos o elementos a los mismos puertos. En consecuencia, el objetivo era imprimir en la pantalla el estado ON u OFF en respuesta a la señal proveniente de un botón. Se llevó a cabo utilizando una protoboard, cables y otros materiales, los cuales se detallarán más adelante. </p>
+                        
+                        
+                        <p id="intro">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Introducción -</h2>
+                        <p class="fs-6 mb-4">
+                            En la introducción de esta práctica, se examinó la interacción entre una pantalla OLED, un botón y el microcontrolador ATtiny85, utilizando la placa de desarrollo Arduino UNO como la plataforma central. El objetivo principal era mostrar en la pantalla OLED el estado de la señal generada por un botón. Para lograr esto, se estableció una conexión eficiente entre los elementos a través del microcontrolador ATtiny85, aprovechando la versatilidad y capacidad de procesamiento de la placa Arduino UNO como base para el desarrollo del proyecto. Este enfoque posibilitó la creación de un sistema integrado que respondía visualmente a las acciones del usuario a través del botón.
+                            En cuanto a conceptos fundamentales, se mencionó el protocolo I2C, que aunque no se implementó directamente en la práctica, se destacó su importancia en caso de expandir el circuito con el mismo microcontrolador. Este protocolo permitiría la comunicación entre dos microcontroladores, facilitando la creación de circuitos más elaborados y extensos. </p>
+                      
+                        
+                        <p id="materiales">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Materiales -</h2>
+                        <p class="fs-6 mb-4">-Arduino UNO</p>
+                        <p class="fs-6 mb-4">-Protoboards</p>
+                        <p class="fs-6 mb-4">-Resistencias 10kΩ</p>
+                        <p class="fs-6 mb-4">-Attiny85</p>
+                        <p class="fs-6 mb-4">-Protoboard</p>
+                        <p class="fs-6 mb-4">-Cables macho-macho</p>
+                        <p class="fs-6 mb-4">-Push botton</p>
+                    
+                        <p id="desarrollo">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Desarrollo -</h2>
+                        <p class="fs-6 mb-4">La ejecución de este procedimiento no resultó ser prolongada ni particularmente complicada, ya que simplemente implicaba conectar la pantalla a los pines SDA y SCL, correspondientes a los datos, en nuestro microcontrolador. Además, era suficiente añadir un botón y conectarlo al pin deseado para lograr el funcionamiento completo de nuestro sistema.</p>
+                       
+                        <section id="simulacion">
+                            <h2 class="fw-bolder mb-4 mt-5 fs-5">- Simulación -</h2>
+                            
+                            <div class="row">
+                                <div class="col-md-6 mb-4" align="center">
+                                    <figure>
+                                        <video width="100%" controls>
+                                            <source src="video/OLED.mov" type="video/mp4">
+                                        </video>
+                                    </figure>
+                                </div>
+                               
+                            </div>
+                        </section>
+                        <section id="diseño">
+                            <h1 class="fw-bolder2 mb-4 mt-5 fs-5">- Diseño -</h1>
+                            <div class="row">
+                                <div class="col-md-6 mb-4" align="center">
+                                    <figure>
+                                        <img class="img-fluid rounded" width="100%" src="img/CODIGO.png" alt="..." />
+                                    </figure>
+                                </div>           
+                                            
+                            </div>
+                        </section>
+                           
+
+                        <section id="resultados">
+                            <h1 class="fw-bolder2 mb-4 mt-5 fs-5">- Resultados -</h1>
+                            <div class="row">
+                                <div class="col-md-6 mb-4" align="center">
+                                    <h1 class="mb-4 mt-5 fs-5" > </h1>
+                                    <figure>
+                                        <video width="70%" controls>
+                                            <source src="video/R.mov" type="video/mp4">
+                                        </video>
+                                    </figure>
+                                </div>
+                                
+
+                            </div>
+                        </section>
+
+                        <p id="conclusiones">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Conclusiones -</h2>
+                        <p class="fs-6 mb-4">En resumen, la práctica subrayó la exitosa integración entre una pantalla OLED, un botón y el microcontrolador ATtiny85, utilizando la plataforma Arduino UNO como punto central. Esta integración posibilitó la impresión efectiva en la pantalla del estado de la señal generada por el botón. El ejercicio destacó la versatilidad del entorno de desarrollo Arduino para la creación de sistemas interactivos y visuales. Además, el uso del ATtiny85 demostró cómo microcontroladores de menor escala pueden desempeñar un papel crucial en proyectos que demandan eficiencia y economía de recursos. En conclusión, la práctica ofreció una valiosa experiencia práctica en la integración de componentes electrónicos para alcanzar un sistema funcional y visualmente informativo.</p>
+
+                </div>
+            </section>
+
+            
+        </main>
+
+        <!-- Footer-->
+        <footer class="bg-dark py-4 mt-auto">
+            <div class="container px-5">
+                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                    <div class="col-auto"><div class="small m-0 text-white">Copyright &copy; Ingenierias-iberopuebla.mx 2023</div></div>
+                    <div class="col-auto">
+                        <a class="link-light small" href="#!">Privacy</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="#!">Terms</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="#!">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
